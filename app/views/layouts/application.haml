@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title ActiveRecordImport
+    %title ActiverecordImport
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     :css
@@ -17,7 +17,4 @@
 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-
-    -if flash[:notice].present?
-      =render :partial => 'layouts/notice'
     = yield

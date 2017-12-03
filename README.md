@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Demo is showing the performance difference between the bulk insertion of activerecord-import.
+It is accompanied with the article I wrote in [Medum][MED] introducing the use of RubyGems.
 
-Things you may want to cover:
+The live demo is [here][DEMO].
 
-* Ruby version
+[MED]: <https://medium.com/實用的rubygems/activerecord-import-把資料批量寫進資料庫-cc05e328bc67>
+[DEMO]: <https://demo-activerecord-import.herokuapp.com>
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  ITERATION = 10_000
+  ITERATION = 2_000
   def batch_create
     require 'database_cleaner'
     DatabaseCleaner.strategy = :truncation
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       User.import users, batch_size: 1_000    # or use import!
     }
 
-    redirect_to root_path, notice: "No ARI: #{no_ari_time}, With ARI: #{ari_time}"
+    redirect_to root_path, notice: "Not using activerecord-import: #{no_ari_time}s<br/>Using activerecord-import: #{ari_time}s"
    
   end
 
