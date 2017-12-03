@@ -1,0 +1,28 @@
+/ Navigation
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+  .container
+    %a.navbar-brand{:href => "#"} RubyGems
+    %button.navbar-toggler{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      %ul.navbar-nav.ml-auto
+        %li.nav-item.active
+          %a.nav-link{:href => "#"}
+            ActiveRecordImport
+            %span.sr-only (current)
+
+/ Page Content
+.container
+  .row
+    .col-lg-4.text-center
+      %h1.mt-5 Demo
+    .col-lg8
+      %br
+      %p.lead 
+        Click the start to see the performance difference.
+        %br
+        %a{href: @github_link}=@github_link
+      %ul.list-unstyled
+        %li Version: v0.21.0
+        %li Last Updated: 3rd Dec 2017 
+      %a.btn.btn-primary{href: batch_create_path, data: {method: :post} } Click Me!
